@@ -23,6 +23,8 @@ namespace ChefsNDishes.Models
         [AgeCheck]
         public DateTime DOB {get; set;}
 
+        public int Age {get; set;}
+
         public List<Dish> OwnDishes {get; set;}
     }
 

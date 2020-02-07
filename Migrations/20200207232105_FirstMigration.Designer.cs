@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ChefsNDishes.Migrations
 {
     [DbContext(typeof(MyContext))]
-    [Migration("20200207185153_FirstMigration")]
+    [Migration("20200207232105_FirstMigration")]
     partial class FirstMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -23,6 +23,9 @@ namespace ChefsNDishes.Migrations
                 {
                     b.Property<int>("ChefId")
                         .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<int>("Age")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("DOB")

@@ -51,3 +51,4 @@ C:\Users\Owner\Desktop\coding\csharp\aspMVC\ChefsNDishes\obj\Debug\netcoreapp3.0
 C:\Users\Owner\Desktop\coding\csharp\aspMVC\ChefsNDishes\obj\Debug\netcoreapp3.0\Razor\Views\Home\NewChef.cshtml.g.cs
 C:\Users\Owner\Desktop\coding\csharp\aspMVC\ChefsNDishes\obj\Debug\netcoreapp3.0\Razor\Views\Home\Dishes.cshtml.g.cs
 C:\Users\Owner\Desktop\coding\csharp\aspMVC\ChefsNDishes\obj\Debug\netcoreapp3.0\Razor\Views\Home\DishPage.cshtml.g.cs
+C:\Users\Owner\Desktop\coding\csharp\aspMVC\ChefsNDishes\obj\Debug\netcoreapp3.0\Razor\Views\Home\SingleDish.cshtml.g.cs

@@ -36,6 +36,7 @@ namespace ChefsNDishes.Controllers
         {
             if(ModelState.IsValid)
             {
+                newChef.Age = AgeCalculator.CalcAge(newChef.DOB);
                 dbContext.Add(newChef);
                 dbContext.SaveChanges();
                 return RedirectToAction("Index");
@@ -51,6 +52,13 @@ namespace ChefsNDishes.Controllers
         {
             ViewBag.dishes = dbContext.Dishes.Include(d => d.Creator).ToList();
             return View("Dishes");
+        }
+
+        [HttpGet("dishes/{id}")]
+        public IActionResult SingleDish(int id)
+        {
+            ViewBag.Dish = dbContext.Dishes.FirstOrDefault(d => d.DishId == id);
+            return View();
         }
 
         [HttpGet("dishes/new")]

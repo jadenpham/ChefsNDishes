@@ -21,7 +21,7 @@
             @foreach(var dish in ViewBag.dishes)
             {
                 <tr>
-                    <td>@dish.Name</td>
+                    <td><a href="/dishes/@dish.DishId">@dish.Name</a></td>
                     <td>@dish.Creator.FirstName @dish.Creator.LastName</td>
                     <td>@dish.Tastiness</td>
                     <td>@dish.Calories</td>

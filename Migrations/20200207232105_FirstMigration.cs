@@ -16,7 +16,8 @@ namespace ChefsNDishes.Migrations
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     FirstName = table.Column<string>(nullable: false),
                     LastName = table.Column<string>(nullable: false),
-                    DOB = table.Column<DateTime>(nullable: false)
+                    DOB = table.Column<DateTime>(nullable: false),
+                    Age = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {

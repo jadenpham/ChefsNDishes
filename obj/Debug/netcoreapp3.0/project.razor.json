@@ -14369,6 +14369,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Owner\\Desktop\\coding\\csharp\\aspMVC\\ChefsNDishes\\Views\\Home\\SingleDish.cshtml",
+      "TargetPath": "Views\\Home\\SingleDish.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Owner\\Desktop\\coding\\csharp\\aspMVC\\ChefsNDishes\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
