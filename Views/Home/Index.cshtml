@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="~/css/tables.css">
+</head>
+<body>
+    <div>
+        <h1>Chefs|<a href="/dishes">Dishes</a></h1>
+        <a href="/new">Add a Chef</a>
+
+    </div>
+    <div>
+        <h3>Check out our roster of Chefs</h3>
+        <table>
+            <th>Name</th>
+            <th>Age</th>
+            <th># of Dishes</th>
+            @foreach(var chef in ViewBag.allchefs)
+            {
+            <tr>
+                <td>@chef.FirstName @chef.LastName</td>
+                <td>@AgeCalculator.CalcAge(chef.DOB)</td>
+                <td>@chef.OwnDishes.Count</td>
+            </tr>
+            }
+        </table>
+    </div>
+</body>
+</html>

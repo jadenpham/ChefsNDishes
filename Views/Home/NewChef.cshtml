@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    @model ChefsNDishes.Models.Chef
+    <div>
+        <h1>Add a Chef!</h1>
+        <a href="/">Home</a>
+    </div>
+    <div>
+        <form asp-action="AddChef" method="post">
+            <label asp-for="FirstName"></label>
+            <span asp-validation-for="FirstName"></span>
+            <input asp-for="FirstName">
+
+            <label asp-for="LastName"></label>
+            <span asp-validation-for="LastName"></span>
+            <input asp-for="LastName">
+
+            <label asp-for="DOB"></label>
+            <span asp-validation-for="DOB"></span>
+            <input asp-for="DOB">
+
+            <input type="submit" value="Add Chef">
+        </form>
+    </div>
+</body>
+</html>

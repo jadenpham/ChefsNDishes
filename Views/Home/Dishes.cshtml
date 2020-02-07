@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="~/css/tables.css">
+</head>
+<body>
+    <div>
+        <h1><a href="/">Chefs</a>|Dishes</h1>
+        <a href="/dishes/new">Add a Dish</a>
+    </div>
+    <div>
+        <h4>Yum, take a look at your tasty dishes</h4>
+        <table>
+            <th>Name</th>
+            <th>Chef</th>
+            <th>Tastiness</th>
+            <th>Calories</th>
+            @foreach(var dish in ViewBag.dishes)
+            {
+                <tr>
+                    <td>@dish.Name</td>
+                    <td>@dish.Creator.FirstName @dish.Creator.LastName</td>
+                    <td>@dish.Tastiness</td>
+                    <td>@dish.Calories</td>
+                </tr>
+            }
+        </table>
+    </div>
+</body>
+</html>
