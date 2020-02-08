@@ -10,3 +10,11 @@ label{
 input{
     display: block;
 }
+
+textarea{
+    display: inline-block;
+}
+
+form{
+    width: 100%;
+}

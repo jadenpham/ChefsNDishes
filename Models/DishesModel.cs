@@ -21,6 +21,13 @@ namespace ChefsNDishes.Models
         [Required(ErrorMessage = "Description is required")]
         public string Description {get; set;}
 
+        [Required(ErrorMessage = "Ingredients required")]
+        public string Ingredients {get; set;} 
+
+        [Required(ErrorMessage = "Cooking Instructions required")]
+        [Display(Name = "Cooking Instructions")]
+        public string Instructions {get; set;}
+
         public int ChefId {get; set;}
 
         public Chef Creator {get; set;}
