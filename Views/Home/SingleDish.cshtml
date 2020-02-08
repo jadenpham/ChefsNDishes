@@ -10,10 +10,16 @@
     @model Dish
     <div>
         <a href="/">Home</a>
+        <a href="/dishes">Dishes</a>
         <h1>@ViewBag.Dish.Name</h1>
         <h4>Calories: @ViewBag.Dish.Calories</h4>
         <h4>Tastiness: @ViewBag.Dish.Tastiness</h4>
-        <h4>Description: <p>@ViewBag.Dish.Description</p></h4>
+        <h4>Description:</h4>
+        <p>@ViewBag.Dish.Description</p>
+        <h4>Ingredients</h4>
+        <p>@ViewBag.Dish.Ingredients</p>
+        <h4>Instructions:</h4>
+        <p>@ViewBag.Dish.Instructions</p>
     </div>
 </body>
 </html>

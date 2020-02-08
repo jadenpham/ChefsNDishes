@@ -34,6 +34,8 @@ namespace ChefsNDishes.Migrations
                     Calories = table.Column<int>(nullable: false),
                     Tastiness = table.Column<int>(nullable: false),
                     Description = table.Column<string>(nullable: false),
+                    Ingredients = table.Column<string>(nullable: false),
+                    Instructions = table.Column<string>(nullable: false),
                     ChefId = table.Column<int>(nullable: false),
                     CreatedAt = table.Column<DateTime>(nullable: false),
                     UpdatedAt = table.Column<DateTime>(nullable: false)

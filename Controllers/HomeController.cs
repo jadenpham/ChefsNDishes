@@ -30,6 +30,12 @@ namespace ChefsNDishes.Controllers
 
             return View();
         }
+        [HttpGet("chef/{id}")]
+        public IActionResult Chef(int id)
+        {
+            ViewBag.chefWDishes = dbContext.Chefs.Include(c => c.OwnDishes).FirstOrDefault(c => c.ChefId == id);
+            return View();
+        }
 
         [HttpPost]
         public IActionResult AddChef(Chef newChef)

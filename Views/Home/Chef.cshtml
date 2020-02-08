@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="~/css/tables.css">
+</head>
+<body>
+    <div>
+        <a href="/">Home</a>
+        <a href="/dishes">Dishes</a>
+        <h1>Dishes by: @ViewBag.chefWDishes.FirstName @ViewBag.chefWDishes.LastName</h1>
+        <table>
+            <th>Dish Name</th>
+            <th>Calories</th>
+            <th>Tastiness</th>
+            @foreach(var dish in @ViewBag.chefWDishes.OwnDishes)
+            {
+                <tr>
+                    <td><a href="/dishes/@dish.DishId">@dish.Name</a></td>
+                    <td>@dish.Calories</td>
+                    <td>@dish.Tastiness</td>
+                </tr>
+            }
+        </table>
+    </div>
+</body>
+</html>

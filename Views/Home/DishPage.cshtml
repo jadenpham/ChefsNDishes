@@ -40,7 +40,15 @@
             </select>
             <label asp-for="Description"></label>
             <span asp-validation-for="Description"></span>
-            <textarea asp-for="Description" cols="30" rows="10"></textarea>
+            <textarea asp-for="Description" cols="30" rows="5"></textarea>
+            
+            <label asp-for="Ingredients"></label>
+            <span asp-validation-for="Ingredients"></span>
+            <textarea asp-for="Ingredients" cols="30" rows="5"></textarea>
+            
+            <label asp-for="Instructions"></label>
+            <span asp-validation-for="Instructions"></span>
+            <textarea asp-for="Instructions" cols="30" rows="5"></textarea>
 
             <input type="submit" value="Add Dish">
         </form>
